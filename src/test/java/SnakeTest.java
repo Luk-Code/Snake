@@ -16,6 +16,7 @@ public class SnakeTest {
     public void snakeShouldGrowWhenEat(){
         Snake snake = new Snake();
         Apple apple = new Apple();
+
         snake.eat(apple);
 
         assertEquals(snake.body.size(), snake.startWith + apple.getKcal() + 1);
